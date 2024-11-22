@@ -103,7 +103,7 @@ ax.set_xlabel("Alkalinity of Ash (AOA)")
 _ = ax.set_ylabel("Alcohol Quality (AQ)")
 
 plt.show()
-
+```
 
 ## Issues with the Example: Low Correlation Coefficient
 
