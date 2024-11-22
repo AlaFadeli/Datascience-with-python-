@@ -103,23 +103,28 @@ ax.set_xlabel("Alkalinity of Ash (AOA)")
 _ = ax.set_ylabel("Alcohol Quality (AQ)")
 
 plt.show()
+
+
 ## Issues with the Example: Low Correlation Coefficient
 
-While this code demonstrates a basic linear regression model, the quality of the model heavily depends on the **correlation coefficient** (also known as **r**) between the independent variable (alkalinity of ash) and the dependent variable (alcohol quality). In linear regression, a strong linear relationship between the two variables is crucial for obtaining accurate predictions.
+In this example, we demonstrate a basic linear regression model, which is highly dependent on the **correlation coefficient** (denoted as **r**) between the independent variable (alkalinity of ash) and the dependent variable (alcohol quality). For linear regression to be effective, a strong linear relationship between these two variables is essential for making accurate predictions.
 
-In this case, the **correlation coefficient** is low (around **0.5**, or lower), which indicates a **weak linear relationship** between alkalinity of ash and alcohol quality. Ideally, a good linear regression model should have a correlation coefficient closer to **1**, indicating a strong positive linear relationship, or closer to **-1** for a strong negative relationship.
+However, in this case, the **correlation coefficient** is relatively low (around **0.5**), which signals a **weak linear relationship** between alkalinity of ash and alcohol quality. Ideally, a good linear regression model should exhibit a correlation coefficient closer to **1** (indicating a strong positive linear relationship) or **-1** (indicating a strong negative relationship).
 
-### Why is a Low Correlation Coefficient Problematic?
+### Why Is a Low Correlation Coefficient a Problem?
 
-#### 1. Weak Predictive Power
-With a correlation coefficient of **0.5**, the linear regression model may not capture the true nature of the relationship between the variables. This results in predictions that are less accurate and potentially unreliable.
+#### 1. **Weak Predictive Power**
+   With a correlation coefficient of only **0.5**, the linear regression model struggles to capture the true relationship between the variables. This can lead to inaccurate predictions, as the model may fail to represent the underlying trend effectively.
 
-#### 2. Non-linear Relationships
-If the correlation coefficient is low, the relationship between alkalinity of ash and alcohol quality might not be linear. In such cases, other models such as **polynomial regression**, **decision trees**, or more complex machine learning models might yield better results.
+#### 2. **Non-linear Relationships**
+   A low correlation coefficient suggests that the relationship between the two variables might not be linear. In such cases, linear regression is not the most suitable model. More advanced techniques like **polynomial regression**, **decision trees**, or other **machine learning models** could potentially yield better results by capturing the non-linear relationship between the variables.
 
-#### 3. Overfitting/Underfitting
-If the correlation is weak, the linear model might overfit or underfit the data. **Overfitting** occurs when the model captures noise in the data rather than the true underlying trend, while **underfitting** happens when the model fails to capture important patterns in the data.
+#### 3. **Risk of Overfitting or Underfitting**
+   When the correlation between variables is weak, the linear regression model might either **overfit** or **underfit** the data:
+   - **Overfitting** happens when the model captures noise or random fluctuations in the data, rather than the actual trend, leading to poor generalization.
+   - **Underfitting** occurs when the model is too simple and fails to capture the significant patterns, leading to subpar performance.
 
 ### Conclusion
-This code provides a simple visualization and implementation of linear regression. However, due to the low correlation coefficient (around **0.5**), it may not be the best example of linear regression. A higher correlation coefficient would indicate a stronger relationship between alkalinity of ash and alcohol quality, which would result in better predictions. Further analysis or exploration into other features or machine learning models should be considered to improve prediction accuracy.
+
+While the provided code offers a basic implementation of linear regression, the model's performance is limited due to the **low correlation coefficient** (around **0.5**). A stronger correlation would likely improve the accuracy of the predictions. To enhance the model, you might explore other features, utilize more complex models, or conduct further analysis to identify stronger relationships that lead to better prediction outcomes.
 
