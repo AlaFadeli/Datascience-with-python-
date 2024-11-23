@@ -108,3 +108,18 @@ _ = ax.set_ylabel("Alcohol Quality (AQ)")
 
 plt.show()
 ```
+## Representations
+
+Below are the visualizations generated from the model:
+
+### 1. Scatter Matrix
+
+![Scatter Matrix](representations/scatter_matrix_local.jpg)
+
+### 2. Correlation Matrix
+
+![Correlation Matrix](representations/correlation_matrix_local.jpg)
+
+### 3. Linear Regression Results
+
+![Linear Regression](representations/linear_regression_local.jpg)
