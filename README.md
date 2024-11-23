@@ -116,6 +116,7 @@ Below are the visualizations generated from the model:
 
 ### 1. Correlation Matrix
 
+**Note** :  We are only interested in the relationship between one variable and the target (Wine quality) to perform a "simple" linear regression 
 ![Correlation Matrix](representations/correlation_matrix.jpg)
 
 ### 2. Linear Regression Results
