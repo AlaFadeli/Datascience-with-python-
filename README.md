@@ -121,3 +121,26 @@ Below are the visualizations generated from the model:
 ### 2. Linear Regression Results
 
 ![Linear Regression](representations/linear_regression.jpg)
+## Issues with the Example: Low Correlation Coefficient
+
+In this example, we demonstrate a basic linear regression model, which is highly dependent on the correlation coefficient (denoted as r) between the independent variable (alkalinity of ash) and the dependent variable (alcohol quality). For linear regression to be effective, a strong linear relationship between these two variables is essential for making accurate predictions.
+
+However, in this case, the correlation coefficient is relatively low (around 0.5), which signals a weak linear relationship between alkalinity of ash and alcohol quality. Ideally, a good linear regression model should exhibit a correlation coefficient closer to 1 (indicating a strong positive linear relationship) or -1 (indicating a strong negative relationship).
+
+### Why Is a Low Correlation Coefficient a Problem?
+  
+1. **Weak Predictive Power**  
+   As you can see in the representation above,the highest correlation coefficient is far from 1 thus,the linear regression model struggles to capture the true relationship between the variables. This can lead to inaccurate predictions, as the model may fail to represent the underlying trend effectively.
+
+2. **Non-linear Relationships**  
+   A low correlation coefficient suggests that the relationship between the two variables might not be linear. In such cases, linear regression is not the most suitable model. More advanced techniques like polynomial regression, decision trees, or other machine learning models could potentially yield better results by capturing the non-linear relationship between the variables.
+
+3. **Risk of Overfitting or Underfitting**  
+   When the correlation between variables is weak, the linear regression model might either overfit or underfit the data:
+   - **Overfitting** happens when the model captures noise or random fluctuations in the data, rather than the actual trend, leading to poor generalization.
+   - **Underfitting** occurs when the model is too simple and fails to capture the significant patterns, leading to subpar performance.
+
+### Conclusion
+
+While the provided code offers a basic implementation of linear regression, the model's performance is limited due to the low correlation coefficient (around 0.5). A stronger correlation would likely improve the accuracy of the predictions. To enhance the model, you might explore other features, utilize more complex models, or conduct further analysis to identify stronger relationships that lead to better prediction outcomes.
+
